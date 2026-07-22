@@ -1,1 +1,134 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+/**
+ * Font family aliases for the Figma export.
+ *
+ * The exported components reference fonts by their exact Figma family names
+ * (e.g. font-['Helvetica_Neue:Bold',sans-serif] -> "Helvetica Neue:Bold").
+ * These @font-face rules bind those exact names to real installed fonts via
+ * local(), with graceful fallbacks so the design renders with the intended
+ * Helvetica Neue and Loretta Display VF typefaces wherever they are available.
+ */
+
+/* ---------- Helvetica Neue family ---------- */
+@font-face {
+  font-family: "Helvetica Neue:Regular";
+  src: local("Helvetica Neue"), local("HelveticaNeue"), local("Helvetica"),
+    local("Arial");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue:Medium";
+  src: local("Helvetica Neue Medium"), local("HelveticaNeue-Medium"),
+    local("Helvetica Neue"), local("Helvetica"), local("Arial");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue:Bold";
+  src: local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"),
+    local("Helvetica Neue"), local("Helvetica"), local("Arial");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue:Bold Italic";
+  src: local("Helvetica Neue Bold Italic"), local("HelveticaNeue-BoldItalic"),
+    local("Helvetica Neue"), local("Helvetica"), local("Arial");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue:Condensed Black";
+  src: local("Helvetica Neue Condensed Black"),
+    local("HelveticaNeue-CondensedBlack"), local("Helvetica Neue"),
+    local("Helvetica"), local("Arial Narrow"), local("Arial");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: condensed;
+  font-display: swap;
+}
+
+/* Bare "Helvetica Neue" reference */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue"), local("HelveticaNeue"), local("Helvetica"),
+    local("Arial");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- Helvetica ---------- */
+@font-face {
+  font-family: "Helvetica:Bold";
+  src: local("Helvetica Bold"), local("Helvetica-Bold"), local("Helvetica"),
+    local("Arial");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- Loretta Display VF ---------- */
+@font-face {
+  font-family: "Loretta Display VF:Medium";
+  src: local("Loretta Display VF Medium"), local("Loretta Display VF"),
+    local("LorettaDisplayVF"), local("Loretta Display"), local("Georgia");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Loretta Display VF:Medium Italic";
+  src: local("Loretta Display VF Medium Italic"), local("Loretta Display VF"),
+    local("LorettaDisplayVF"), local("Loretta Display"), local("Georgia");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Loretta Display VF:Bold";
+  src: local("Loretta Display VF Bold"), local("Loretta Display VF"),
+    local("LorettaDisplayVF"), local("Loretta Display"), local("Georgia");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bare "Loretta Display VF" reference */
+@font-face {
+  font-family: "Loretta Display VF";
+  src: local("Loretta Display VF"), local("LorettaDisplayVF"),
+    local("Loretta Display"), local("Georgia");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- Inter ---------- */
+@font-face {
+  font-family: "Inter:Regular";
+  src: local("Inter"), local("Inter-Regular");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter:Bold";
+  src: local("Inter Bold"), local("Inter-Bold"), local("Inter");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
